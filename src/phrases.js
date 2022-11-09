@@ -1,4 +1,4 @@
-export const phrases =
+export const Phrases =
 [
     "El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial",
     "Sentia curiositat per l'interior de la nau i es va posar a inspeccionar-la. Va arribar a una sala amb dues portes.",
