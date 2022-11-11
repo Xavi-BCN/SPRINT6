@@ -1,5 +1,5 @@
-import './styles.css';
-import React, { useState } from 'react';
+//import './styles.css';
+import React from 'react';
 import { Escena } from './components/escena/Escena'
 import ReactDOM from 'react-dom/client';
 import { Phrases } from './phrases'
@@ -8,8 +8,8 @@ const App = () => {
 
   return ( 
         <>
-          {Phrases.map((item) => (
-            <Escena showText = {item}/>
+          {Phrases.map((item,i) => (
+            <Escena key={i} showText = {item.text}/>
           ))}
         </>           
     );

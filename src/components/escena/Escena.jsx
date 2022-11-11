@@ -1,12 +1,8 @@
 
-export const Escena = ({text}) => {    
-      /* Aqui va la logica del componente*/
-      
-      /* Aqui va lo que pinta en el DOM*/
-      return (
-           
-            <h3>{text}</h3>
-           
+export const Escena = (props) => {    
+     
+      return (      
+            <h3>{props.showText}</h3>
           );
 }
 
