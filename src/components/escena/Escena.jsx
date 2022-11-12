@@ -1,11 +1,11 @@
-import {StyltBorder} from './stylEscena';
+import {StylBorder} from './stylEscena';
 
 export const Escena = (props) => {    
 
       return (
-            <StyltBorder>
+            <StylBorder>
             <h4>{props.showText}</h4>
-            </StyltBorder>      
+            </StylBorder>      
           );
 }
 
