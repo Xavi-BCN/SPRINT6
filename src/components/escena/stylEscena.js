@@ -6,5 +6,6 @@ export const StylBorder = StylEscena.div`
     text-align: center;  
     border: 2px solid black;
     border-radius: 60px;
+    background-color: pink;
 `;
 
