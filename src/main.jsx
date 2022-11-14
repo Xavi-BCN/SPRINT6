@@ -4,25 +4,37 @@ import { useState , useEffect } from 'react';
 import { Escena } from './components/escena/Escena'
 import ReactDOM from 'react-dom/client';
 import { Phrases } from './phrases'
-import { StylBotoAnt, StylBotoSeg  } from './components/styledbutton'
+import Button from './components/Button'
+
 
 const App = () => {
-  const [positionMark, setPositionMark] = useState(0)
+  const [position, setPosition] = useState(0)
 
   const movePrevius = () => {
-    setPositionMark(0);
-
-
+    if(position > -1){
+      setPosition(position - 1);
+    }else{
+      alert('Ja estàs al principi');
+    }
   };
 
-  useEffect(()=>{
+  const moveNext = () => {
+    if(position < 4){
+      setPosition(position + 1);
+      <Escena />
 
-  });
+    }else{
+      alert('Ja estàs al final');
+    }
+  };
+
 
   return ( 
         <>
-          <StylBotoAnt onClick={()=>movePrevius()}>Anterior</StylBotoAnt>
-          <StylBotoSeg>Següent</StylBotoSeg>
+          <Button
+          manejarClick={movePrevius}>Anterior</Button>
+          <Button
+          manejarClick={moveNext}>Següent</Button>
           {Phrases.map((item,i) => (
             <Escena key={i} showText = {item.text}/>
           ))}

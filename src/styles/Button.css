@@ -1,0 +1,14 @@
+button{
+    padding: 20px;
+    font-weight: 700;
+    width: 50%;
+    height: 70px;
+    margin-top: 10px;
+    text-align: center; 
+    cursor: pointer;
+    display: inline
+}
+button:hover{
+    background-color: cornflowerblue;
+    color: white;
+}

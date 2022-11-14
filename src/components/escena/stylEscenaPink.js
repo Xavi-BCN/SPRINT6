@@ -1,11 +1,11 @@
-import StylEscena from 'styled-components';
+import StylEscenaPink from 'styled-components';
 
-export const StylBorder = StylEscena.div`
+export const StylPink = StylEscenaPink.div`
     
     margin-top: 20px;
     text-align: center;  
     border: 2px solid black;
     border-radius: 60px;
     background-color: pink;
+    
 `;
-

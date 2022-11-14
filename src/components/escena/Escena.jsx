@@ -1,4 +1,5 @@
-import {StylBorder} from './stylEscena';
+import {StylBorder} from './stylEscenaNormal';
+import {StylPink} from './stylEscenaPink';
 
 export const Escena = (props) => {    
 
