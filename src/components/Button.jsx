@@ -1,11 +1,7 @@
 import '../styles/Button.css'
 
-export function Button({ text, isButtonNext, manejarClick }){
-
+export function Button({ text, manejarClick }){
   return(
-    <button
-      onClick={manejarClick}>
-      {text}
-    </button>  
+    <button onClick={manejarClick}>{text}</button>  
   );
 }
