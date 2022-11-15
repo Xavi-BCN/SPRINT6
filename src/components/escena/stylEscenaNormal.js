@@ -1,6 +1,6 @@
 import StylEscenaNormal from 'styled-components';
 
-export const StylBorder = StylEscenaNormal.div`
+export const StylNormal = StylEscenaNormal.div`
     
     margin-top: 20px;
     text-align: center;  

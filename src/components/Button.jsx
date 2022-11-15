@@ -1,14 +1,10 @@
 import '../styles/Button.css'
 
-function Button(props){
+export function Button({ text }){
 
   return(
-    <button
-      onClick={props.manejarClick}>
-      {props.children}
-    </button>
+    <button>
+      {text}
+    </button>  
   );
-  
 }
-
-export default Button;

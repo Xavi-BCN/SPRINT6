@@ -1,12 +1,12 @@
-import {StylBorder} from './stylEscenaNormal';
+import {StylNormal} from './stylEscenaNormal';
 import {StylPink} from './stylEscenaPink';
 
-export const Escena = (props) => {    
+export const Escena = ({ showText }) => {    
 
       return (
-            <StylBorder>
-            <h4>{props.showText}</h4>
-            </StylBorder>      
+            <StylNormal>
+            <h4>{showText}</h4>
+            </StylNormal>      
           );
 }
 
