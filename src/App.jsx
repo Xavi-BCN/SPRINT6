@@ -6,8 +6,11 @@ import { useState } from "react";
 import './styles/App.css';
 
 const App = () => {
+  /*Set position controlara la seleccíon */
   const [position, setPosition] = useState(0);
+  /*Set init controlara si se incio por primera vez la app */
   const [init, setInit] = useState(true);
+  /*Set changeInit se encarga de cambiar el estado */
   const changeInit = () => setInit(false);
 
   const movePrevius = () => {
