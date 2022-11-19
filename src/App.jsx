@@ -3,6 +3,7 @@ import { Button } from "./components/Button";
 import { Phrases } from "./phrases";
 import { Escena } from "./components/escena/Escena";
 import { useState } from "react";
+import './styles/App.css';
 
 const App = () => {
   const [position, setPosition] = useState(0);
@@ -24,7 +25,7 @@ const App = () => {
     );
   } else {
     return (
-      <>
+      <div id="image" style={{backgroundImage: `url(./src/assets/${position + 1}.jpg)`}}>
         <Button text="Anterior" manejarClick={movePrevius} />
         <Button text="Següent" manejarClick={moveNext} />
         {Phrases.map((item, i) => (
@@ -36,7 +37,7 @@ const App = () => {
             imgsrc={item.img}
           />
         ))}
-      </>
+      </div>
     );
   }
 };

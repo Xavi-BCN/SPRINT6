@@ -7,5 +7,5 @@ export const StylPink = StylEscenaPink.div`
     border: 2px solid black;
     border-radius: 60px;
     background-color: pink;
-    
+    width: 800px;
 `;

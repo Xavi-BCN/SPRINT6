@@ -1,0 +1,19 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+#image{
+    justify-items: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    width: 100vw;
+}

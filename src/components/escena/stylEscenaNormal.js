@@ -5,5 +5,6 @@ export const StylNormal = StylEscenaNormal.div`
     text-align: center;  
     border: 2px solid black;
     border-radius: 60px; 
-`;
+    width: 800px;
 
+`;
