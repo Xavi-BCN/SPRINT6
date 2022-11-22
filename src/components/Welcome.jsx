@@ -3,6 +3,7 @@ import history from '../assets/history.png';
 
 export function Welcome({ btnStart }) {
 
+  
   return (
       <div className='init-form'>
         <h1>Benvinguts !!!!</h1>
